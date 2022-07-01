@@ -13,13 +13,15 @@ table {
  overflow: hidden;
  margin: 12px 0;
  min-width: 300px;
- background: #dad8d8;
+ background: #e6e5e5;
 }
 
 .header-row {
 	background: #34495E;
 	color: #fff
 }
+
+tr:nth-child(even) {background-color: #d2e0fa;}
 
 th, td {
 	text-align: left;
