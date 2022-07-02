@@ -21,7 +21,10 @@ table {
 	color: #fff
 }
 
-tr:nth-child(even) {background-color: #d2e0fa;}
+tr:nth-child(even) {
+	background-color: #d2e0fa;
+}
+
 
 th, td {
 	text-align: left;
