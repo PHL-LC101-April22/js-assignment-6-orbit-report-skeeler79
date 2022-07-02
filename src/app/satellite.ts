@@ -17,19 +17,13 @@ export class Satellite {
    
     
 	isSpaceDebris(): boolean {
-		if (this.type.indexOf("Space Debris") >= 0){
+		if (this.type === "Space Debris"){
 			return true;
 		
 		}
    }
    
 }
-
-// isSpaceDebris(satType: string): boolean {
-// 	if (satType === "Space Debris") {
-// 		return true;
-
-// 	}
 
 
 
