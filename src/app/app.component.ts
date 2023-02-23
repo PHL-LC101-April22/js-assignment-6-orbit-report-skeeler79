@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Satellite } from './satellite';
 
 @Component({
@@ -7,6 +7,8 @@ import { Satellite } from './satellite';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
   title = 'orbit-report';
 
   sourceList: Satellite[];
@@ -51,6 +53,11 @@ export class AppComponent {
 		// assign this.displayList to be the array of matching satellites
 		// this will cause Angular to re-make the table, but now only containing matches
 		this.displayList = matchingSatellites;
+	}
+
+	clear():void{
+	
+		this.displayList=this.sourceList;
 	}
 
 

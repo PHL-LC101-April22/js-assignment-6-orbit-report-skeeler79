@@ -1,8 +1,9 @@
 <h1>Orbit Report</h1>
 
 <div class="search-form">
-	Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm" />
+	Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm" id="searchTerm"/>
 	<button (click)="search(searchTerm.value);">Search</button>
+	<button (click)="clear(); searchTerm.value = ' '">Clear Search</button>
 </div>
 
 <app-orbit-counts [satellites]="displayList"></app-orbit-counts>
